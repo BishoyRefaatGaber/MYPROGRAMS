@@ -1,0 +1,21 @@
+#include "stdio.h"
+void oddnumber(int low,int high){
+	if(low%2==0)low++;
+	int cont=0;
+	while(low<=high)
+	{
+		cont++;
+		low+=2;
+	}
+	printf("number of odd number between %d and %d = %d",low,high,cont);
+
+}
+int main(){
+	int low,high;
+	printf("Enter Two numbers\n");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&low);
+	scanf("%d",&high);
+	oddnumber(low,high);
+	return 0;
+}
