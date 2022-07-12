@@ -1,0 +1,16 @@
+#include "stdio.h"
+void oddnumber(int low,int high){
+	if (!(low & 1)) low++;
+	    if (!(high & 1)) high--;
+	    printf("%d", 1 + (high - low) / 2);
+
+}
+int main(){
+	int low,high;
+	printf("Enter Two numbers\n");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&low);
+	scanf("%d",&high);
+	oddnumber(low,high);
+	return 0;
+}
